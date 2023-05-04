@@ -101,14 +101,14 @@ static int AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || HelpRequested(gArgs) || gArgs.IsArgSet("-version")) {
         // First part of help message is specific to this utility
-        std::string strUsage = PACKAGE_NAME " qtum-tx utility version " + FormatFullVersion() + "\n";
+        std::string strUsage = PACKAGE_NAME " borsh-tx utility version " + FormatFullVersion() + "\n";
 
         if (gArgs.IsArgSet("-version")) {
             strUsage += FormatParagraph(LicenseInfo());
         } else {
             strUsage += "\n"
-                "Usage:  qtum-tx [options] <hex-tx> [commands]  Update hex-encoded qtum transaction\n"
-                "or:     qtum-tx [options] -create [commands]   Create hex-encoded qtum transaction\n"
+                "Usage:  borsh-tx [options] <hex-tx> [commands]  Update hex-encoded borsh transaction\n"
+                "or:     borsh-tx [options] -create [commands]   Create hex-encoded borsh transaction\n"
                 "\n";
             strUsage += gArgs.GetHelpMessage();
         }
