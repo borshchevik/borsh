@@ -1612,7 +1612,7 @@ bool CheckIndexProof(const CBlockIndex& block, const Consensus::Params& consensu
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     if(nHeight <= consensusParams.nLastBigReward)
-        return 20000 * COIN;
+        return 200000 * COIN;
 
     int subsidyHalvingInterval = consensusParams.SubsidyHalvingInterval(nHeight);
     int subsidyHalvingWeight = consensusParams.SubsidyHalvingWeight(nHeight);
