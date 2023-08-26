@@ -1068,10 +1068,10 @@ public:
     /* Remove super staker entry from the wallet */
     bool RemoveSuperStakerEntry(const uint256& superStakerHash, bool fFlushOnClose=true);
 
-    /* Start staking qtums */
+    /* Start staking borshs */
     void StartStake();
 
-    /* Stop staking qtums */
+    /* Stop staking borshs */
     void StopStake();
 
     /* Is staking closing */

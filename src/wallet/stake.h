@@ -6,10 +6,10 @@
 #include <wallet/wallet.h>
 
 namespace wallet {
-/* Start staking qtums */
+/* Start staking borshs */
 void StartStake(CWallet& wallet);
 
-/* Stop staking qtums */
+/* Stop staking borshs */
 void StopStake(CWallet& wallet);
 
 /* Create coin stake */

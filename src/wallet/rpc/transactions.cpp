@@ -618,8 +618,8 @@ RPCHelpMan listsinceblock()
                 },
                 RPCExamples{
                     HelpExampleCli("listsinceblock", "")
-            + HelpExampleCli("listsinceblock", "\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\" 6")
-            + HelpExampleRpc("listsinceblock", "\"000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad\", 6")
+            + HelpExampleCli("listsinceblock", "\"1f47167a173b8b1e4b20421d91cdc2b35e8b3e23d7f5f3fe0e2c663c5535d0f5\" 6")
+            + HelpExampleRpc("listsinceblock", "\"1f47167a173b8b1e4b20421d91cdc2b35e8b3e23d7f5f3fe0e2c663c5535d0f5\", 6")
                 },
         [&](const RPCHelpMan& self, const JSONRPCRequest& request) -> UniValue
 {
@@ -758,10 +758,10 @@ RPCHelpMan gettransaction()
                     })
                 },
                 RPCExamples{
-                    HelpExampleCli("gettransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"")
-            + HelpExampleCli("gettransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" true")
-            + HelpExampleCli("gettransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\" false true")
-            + HelpExampleRpc("gettransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"")
+                    HelpExampleCli("gettransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\"")
+            + HelpExampleCli("gettransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\" true")
+            + HelpExampleCli("gettransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\" false true")
+            + HelpExampleRpc("gettransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\"")
                 },
         [&](const RPCHelpMan& self, const JSONRPCRequest& request_) -> UniValue
 {
@@ -819,7 +819,7 @@ RPCHelpMan gettransaction()
 
     } else {
         if(!request.httpreq)
-            throw JSONRPCError(RPC_INTERNAL_ERROR, "No HTTP connection. Waitconf is available from qtum-cli, not qtum-qt");
+            throw JSONRPCError(RPC_INTERNAL_ERROR, "No HTTP connection. Waitconf is available from borsh-cli, not borsh-qt");
 
         request.PollStart();
         while (true) {
@@ -901,8 +901,8 @@ RPCHelpMan abandontransaction()
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
                 RPCExamples{
-                    HelpExampleCli("abandontransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"")
-            + HelpExampleRpc("abandontransaction", "\"1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\"")
+                    HelpExampleCli("abandontransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\"")
+            + HelpExampleRpc("abandontransaction", "\"34539b635a0334ac0cbfc1719cc1f27b79ed4fd609838e82868e98d5fa39a652\"")
                 },
         [&](const RPCHelpMan& self, const JSONRPCRequest& request) -> UniValue
 {
