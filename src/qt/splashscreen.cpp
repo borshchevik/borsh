@@ -36,7 +36,7 @@ SplashScreen::SplashScreen(const NetworkStyle* networkStyle)
     : QWidget(), curAlignment(0)
 {
     // set sizes
-    int logoSize                = 50;
+    int logoSize                = 0;
     int logoImageSize           = logoSize - 13;
     int packageTextHeight       = 30;
     int versionTextHeight       = 20;
@@ -84,8 +84,8 @@ SplashScreen::SplashScreen(const NetworkStyle* networkStyle)
     pixPaint.setPen(logo_frame_color);
     pixPaint.drawPath(logoPath);
 
-    QPixmap logo = PlatformStyle::SingleColorIcon(":/icons/bitcoin", foreground_color).pixmap(QSize(logoImageSize, logoImageSize));
-    pixPaint.drawPixmap(logoRect.x() + 6, logoRect.y() + 6, logo);
+    // QPixmap logo = PlatformStyle::SingleColorIcon(":/icons/bitcoin", foreground_color).pixmap(QSize(logoImageSize, logoImageSize));
+    // pixPaint.drawPixmap(logoRect.x() + 6, logoRect.y() + 6, logo);
 
     pixPaint.setPen(foreground_color);
 
