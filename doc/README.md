@@ -1,30 +1,30 @@
-Qtum Core
+Borshchevik Core
 =============
 
 Setup
 ---------------------
-Qtum Core is the original Qtum client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Qtum transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Borshchevik Core is the original Borsh client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Borsh transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Qtum Core, visit [qtumcore.org](https://qtumeco.io/wallet).
+To download Borshchevik Core, visit [borshchevik.com](https://borshchevik.com).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Qtum Core on your native platform.
+The following are some helpful notes on how to run Borshchevik Core on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/qtum-qt` (GUI) or
-- `bin/qtumd` (headless)
+- `bin/borsh-qt` (GUI) or
+- `bin/borshd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run qtum-qt.exe.
+Unpack the files into a directory, and then run borsh-qt.exe.
 
 ### macOS
 
-Drag Qtum Core to your applications folder, and then run Qtum Core.
+Drag Borshchevik Core to your applications folder, and then run Borshchevik Core.
 
 ### Need Help?
 
