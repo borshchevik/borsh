@@ -18,7 +18,7 @@
 #include <tuple>
 
 const std::string UNIX_EPOCH_TIME = "UNIX epoch time";
-const std::string EXAMPLE_ADDRESS[2] = {"QM72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd", "QX1GkJdye9WoUnrE2v6ZQhQ72EUVDtGXQX"};
+const std::string EXAMPLE_ADDRESS[2] = {"B4m8N8njzWMVciaY4uWj391v5757A32ejM", "B63PK1xDVvAzUy8g6tzA8baV5V2T5WFXNJ"};
 
 GlobalMutex cs_blockchange;
 std::condition_variable cond_blockchange;
@@ -175,12 +175,12 @@ std::string ShellQuoteIfNeeded(const std::string& s)
 
 std::string HelpExampleCli(const std::string& methodname, const std::string& args)
 {
-    return "> qtum-cli " + methodname + " " + args + "\n";
+    return "> borsh-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleCliNamed(const std::string& methodname, const RPCArgList& args)
 {
-    std::string result = "> qtum-cli -named " + methodname;
+    std::string result = "> borsh-cli -named " + methodname;
     for (const auto& argpair: args) {
         const auto& value = argpair.second.isStr()
                 ? argpair.second.get_str()
