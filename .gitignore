@@ -2,18 +2,18 @@
 
 *.exe
 *.pdb
-src/qtum
-src/qtumd
-src/qtum-cli
-src/qtum-gui
-src/qtum-node
-src/qtum-tx
-src/qtum-util
-src/qtum-chainstate
-src/qtum-wallet
+src/borsh
+src/borshd
+src/borsh-cli
+src/borsh-gui
+src/borsh-node
+src/borsh-tx
+src/borsh-util
+src/borsh-chainstate
+src/borsh-wallet
 src/test/fuzz/fuzz
-src/test/test_qtum
-src/qt/test/test_qtum-qt
+src/test/test_borsh
+src/qt/test/test_borsh-qt
 
 # autoreconf
 Makefile.in
@@ -92,15 +92,15 @@ src/qt/bitcoin-qt.includes
 *.qm
 Makefile
 !depends/Makefile
-src/qt/qtum-qt
-Qtum-Qt.app
+src/qt/borsh-qt
+Borsh-Qt.app
 
 # Qt Creator
 Makefile.am.user
 
 # Unit-tests
 Makefile.test
-qtum-qt_test
+borsh-qt_test
 
 # Resources cpp
 qrc_*.cpp
